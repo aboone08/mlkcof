@@ -5,35 +5,84 @@
   <title>Martin Luther King, Jr. Commission of Florida, Inc.</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="icon" href="css/images/logo.jpg" type="image/gif" sizes="16x16">
+  <link rel="icon" href="css/images/logo.png" type="image/gif" sizes="16x16">
 </head>
+<style>
+body {
+  background: url("css/images/marchbkg.jpg") no-repeat;
+}
+</style>
 <body>
-
-<nav class="navbar navbar-default" id="header"> <!-- page banner -->
-  <div class="container-fluid" >
-    <div class="navbar-header">
-      <img src="css/images/logo.jpg" class="img-circle" alt="logo" width="152" height="118">
-      <h1>The Martin Luther King Jr. Commission of Florida, Inc.</h1>
-    </div>
-  </div>
-    <button type="button" class="btn btn-link"><img src="css/images/fb.png"></button>
-    <button type="button" class="btn btn-default btn-sm" id="donate">Donate</button>
-</nav> <!-- end of page banner -->
-
-
-  <div class="container">
-    <div class="col-md-3">
-      <div class="list-group"><!-- navbar -->
-      <button type="button" class="list-group-item">Home</button>
-      <button type="button" class="list-group-item">About</button>
-      <button type="button" class="list-group-item">King Celebration</button>
-      <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-      <button type="button" class="list-group-item">Contact</button>
+  <nav class="navbar navbar-default" id="header"> <!-- page banner -->
+    <div class="container-fluid">
+      <div class="col-md-1">
+        <img src="css/images/logo.png" class="img-circle" alt="logo" width="100px">
       </div>
+        <h1>The Martin Luther King Jr. Commission of Florida, Inc.</h1>
+  <!-- About Page Navbar -->
+    <nav class="navbar">
+      <ul class="nav navbar-nav" id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/kingcelebration">King Celebration</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+        <button type="button" class="btn btn-default btn-sm" id="donate">Donate</button>
+        <button type="button" class="btn btn-link" id="fb"><img src="css/images/fb.png"></button>
+    </nav><!-- end of About Page Navbar -->
+    </div>
+  </nav><!-- end of page banner -->
+<!-- event slider -->
+
+    <div class="col-md-6 col-md-offset-5">
+      <div class="carousel slide" data-ride="carousel" id="slider">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="css/images/logo.png" alt="..." width="200px">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="css/images/logo.png" alt="..." width="200px">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          ...
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+          </div>
+  </div>
+  <!-- page footer -->
+  <div class="container">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+      The Martin Luther King, Jr. Commission of Florida, Inc. | Phone: (352) 376 - 2442 |
+      Address: XXXX N.E. Waldo Road - Gainesville, FL 32607
+      </nav>
     </div>
   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
