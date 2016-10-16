@@ -9,7 +9,7 @@ server.use(logger);
 server.use(express.static(path.join(__dirname + '/public')));
 
 server.get('/', function(req, res){
-  res.sendFile('public/html/home.html', {root:__dirname});
+  res.sendFile('public/html/index.html', {root:__dirname});
 });
 
 server.get('/about', function(req, res){
