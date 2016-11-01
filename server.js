@@ -16,7 +16,7 @@ server.get('/about', function(req, res){
   res.sendFile('public/html/about.html', {root:__dirname});
 });
 
-server.get('kingcelebration', function(req, res){
+server.get('/kingcelebration', function(req, res){
   res.sendFile('public/html/kingcelebration.html', {root:__dirname});
 });
 
